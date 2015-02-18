@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	background-color: #545454;
+}
+
+nav {
+	background-color: #545454;
+}
+
+nav ul {
+	height: 30px;
+	z-index: 2;
+}
+
+nav ul li {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	width: 7em;
+	text-align: center;
+	border-right: solid 1px red;
+}
+
+nav a:HOVER {
+	background-color: #f04040;
+}
+
+nav ul li ul {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+
+nav ul li ul li {
+	background: #404040;
+	display: block;
+}
+
+nav ul li ul li a {
+	color: yellow;
+}
+
+nav ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+.nav-right {
+	vertical-align: middle;
+	float: right;
+}
+
+.nav-right a {
+	width: 8em;
+}
+
+.nav-right form {
+	margin-right: 5px;
+}
+
+ul {
+	
+}
+
+/* del buscador */
+table {
+background-color:#F2F2F5;
+border-width:1px 1px 0px 1px;
+border-color:#C9CBD3;
+border-style:solid;
+}
+td {
+color:#000000;
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+background-color:#EAEFF5;
+padding:8px;
+background-color:#F2F2F5;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid solid;
+border-width:1px 0px 1px 0px;
+}
+th {
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+padding:8px;
+background-color:#CFE0F1;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid none;
+border-width:1px 0px 1px 0px;
+white-space:nowrap;
+}

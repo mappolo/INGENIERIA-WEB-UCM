@@ -1,0 +1,35 @@
+MetaProject
+
+==========
+
+Miguel Ángel García Solano
+
+Carlos Alonso Rodríguez
+
+Miguel Ángel Pérez Polo
+
+==========
+
+Es posible registrarse, cambiar el perfil propio, añadir libros, y pedirlos. También es posible administrar la página, en el sentido de eliminar a gente. 
+
+No obstante, para que vea en "mis libros" los libros que añado, o para que vea en "peticiones" los que pido o me piden mientras estoy logeado, necesito o bien modificar mi perfil o salir y volver a entrar. Esto es un problema: vuestros usuarios esperan ver este tipo de cosas inmediatamente. 
+
+Existen problemas de seguridad: es posible decir que te llamas pepe<script>alert(1)</script>, y en varios sitios os olvidais de escapar este nombre (por ejemplo, en la página de usuario, o cuando mostrais información de los libros que tiene el tal "pepe"). En general, toda información debería ser tratada con desconfianza, y o bien la escapais antes de guardarla en la BD, o la escapais cada vez que se muestre. Si algo no es 100% seguro, debería ir escapado.
+
+Enhorabuena por el buen uso de "isAdmin" y la verificación de los tókenes CSRF en el HomeController. 
+
+Es posible mejorar mucho vuestra interfaz (sigue pareciendo una colección de tablas), pero no estais muy lejos de una página web útil. 
+
+Aspirais a un máximo de un 8.5, en función de lo bien que haga cada uno el examen.
+
+Ejercicios: 
+
+A. Fáciles
+    0. Escribe el porcentaje, entre 0 y 100, en el que has contribuido a este proyecto (sumado al que contesten tus compañeros, lo ideal sería que el resultado fuera 100).
+    1. Haz que cada uno de los libros que aparecen en "Mis libros" sea un enlace al correspondiente libro. 
+    2. Haz que el menú de "Eliminar" del administrador se llame "Administrar", y que en la tabla de administrar personas (del_personas), cada user_id sea un enlace que permita ver el perfil del correspondiente usuario. Para ello tendrás que pasar un atributo 'u' a user.jsp, en lugar de usar siempre el usuario logeado.
+    3. Haz que sea imposible pedirse libros a uno mismo (en este momento sí es posible).
+    4. Tapa el agujero de seguridad que resulta cuando un usuario se pone un nombre que contiene Javascript (ver ejemplo más arriba).
+B. Difíciles
+    1. Haz que no haga falta salir-y-volver-a-entrar para ver nuevas peticiones que han ocurrido mientras estabamos logeados. ¿A qué se debe el problema?
+    2. Añade la posibilidad de añadir nuevas categorías de libro. Sólo los administradores deben de tener acceso a esta función.     

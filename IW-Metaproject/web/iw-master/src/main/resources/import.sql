@@ -1,0 +1,146 @@
+/* Autores ( ID, NAME, SURNAME1, SURNAME2 )*/
+INSERT INTO AUTHOR VALUES (1, 'Robert Louis Balfour Stevenson')
+INSERT INTO AUTHOR VALUES (2, 'Emilio Fontanilla Debesa')
+INSERT INTO AUTHOR VALUES (3, 'Paul Bratley')
+INSERT INTO AUTHOR VALUES (4, 'Rafael García-Bermejo Fernández')
+
+/* Géneros ( ID, GENRE )*/
+INSERT INTO GENRE VALUES (1 , 'Agendas y Calendarios')
+INSERT INTO GENRE VALUES (2 , 'Animales y Plantas')
+INSERT INTO GENRE VALUES (3 , 'Artes y Fotografía')
+INSERT INTO GENRE VALUES (4 , 'Autoayuda')
+INSERT INTO GENRE VALUES (5 , 'Biografías y Memorias')
+INSERT INTO GENRE VALUES (6 , 'Ciencias')
+INSERT INTO GENRE VALUES (7 , 'Ciencias Humanas')
+INSERT INTO GENRE VALUES (8 , 'Ciencias Políticas y Sociales')
+INSERT INTO GENRE VALUES (9 , 'Cine')
+INSERT INTO GENRE VALUES (10 , 'Cocina')
+INSERT INTO GENRE VALUES (11 , 'Cómics')
+INSERT INTO GENRE VALUES (12 , 'Deportes y juegos')
+INSERT INTO GENRE VALUES (13 , 'Derecho')
+INSERT INTO GENRE VALUES (14 , 'Economía')
+INSERT INTO GENRE VALUES (15 , 'Empresa')
+INSERT INTO GENRE VALUES (16 , 'Ensayo')
+INSERT INTO GENRE VALUES (17 , 'Enseñanza, de texto y diccionarios')
+INSERT INTO GENRE VALUES (18 , 'Filología')
+INSERT INTO GENRE VALUES (19 , 'Filosofía')
+INSERT INTO GENRE VALUES (20 , 'Historia')
+INSERT INTO GENRE VALUES (21 , 'Infantiles y juveniles')
+INSERT INTO GENRE VALUES (22 , 'Informática')
+INSERT INTO GENRE VALUES (23 , 'Ingeniería')
+INSERT INTO GENRE VALUES (24 , 'Internet y medios digitales')
+INSERT INTO GENRE VALUES (25 , 'Literatura')
+INSERT INTO GENRE VALUES (26 , 'Medicina')
+INSERT INTO GENRE VALUES (27 , 'Merchandising')
+INSERT INTO GENRE VALUES (28 , 'Música')
+INSERT INTO GENRE VALUES (29 , 'Novela fantástica')
+INSERT INTO GENRE VALUES (30 , 'Novela histórica')
+INSERT INTO GENRE VALUES (31 , 'Novela - Narrativa')
+INSERT INTO GENRE VALUES (32 , 'Novela negra/policiaca')
+INSERT INTO GENRE VALUES (33 , 'Novela romántica')
+INSERT INTO GENRE VALUES (34 , 'Ocio y Estilo de vida')
+INSERT INTO GENRE VALUES (35 , 'Oposiciones')
+INSERT INTO GENRE VALUES (36 , 'Psicología y pedagogía')
+INSERT INTO GENRE VALUES (37 , 'Religión')
+INSERT INTO GENRE VALUES (38 , 'Salud, bienestar y dietas')
+INSERT INTO GENRE VALUES (39 , 'Viajes y turismo')
+
+/*Editoriales ( ID, NAME )*/
+INSERT INTO PUBLISHER VALUES (1 , 'Grupo Planeta')
+INSERT INTO PUBLISHER VALUES (2 , 'Editorial Santillana')
+INSERT INTO PUBLISHER VALUES (3 , 'Anaya')
+INSERT INTO PUBLISHER VALUES (4 , 'Prentice Hall')
+INSERT INTO PUBLISHER VALUES (5 , 'Edelvives')
+INSERT INTO PUBLISHER VALUES (6 , 'Puerta')
+INSERT INTO PUBLISHER VALUES (7 , 'Prendas Informe')
+INSERT INTO PUBLISHER VALUES (8 , 'Matias')
+INSERT INTO PUBLISHER VALUES (9 , 'Padre Piquer')
+INSERT INTO PUBLISHER VALUES (10 , 'Pedro Romero')
+INSERT INTO PUBLISHER VALUES (11 , 'SM')
+
+/*Libros ( ID, COVER, FRONT, ISBN, TITLE, YEAR, PUBLISHERS_ID )*/
+INSERT INTO BOOK VALUES ( 1, 9788466794992, 'La isla del tesoro',2011 , 3)
+INSERT INTO BOOK VALUES ( 2, 848966000, 'Fundamentos de Algoritmia',1997 , 4)
+INSERT INTO BOOK VALUES ( 3, 841256800, 'Algebra Lineal',2000 , 9)
+INSERT INTO BOOK VALUES ( 4, 1256892966000, 'Procesadores de Lenguajes',2004 , 4)
+INSERT INTO BOOK VALUES ( 5, 2365688966000, 'Programacion Java',2003 , 8)
+INSERT INTO BOOK VALUES ( 6, 6954218966000, 'Estructura Datos',2008 , 4)
+INSERT INTO BOOK VALUES ( 7, 589628966000, 'La responsabilidad Penal',2012 , 3)
+INSERT INTO BOOK VALUES ( 8, 846966000, 'Fundamentos Computadores',2005 , 5)
+INSERT INTO BOOK VALUES ( 9, 81236000, 'La Cocina de la Abuela',2014 , 6)
+INSERT INTO BOOK VALUES ( 10, 5858236000, 'Ecos de Honor',2011 , 4)
+INSERT INTO BOOK VALUES ( 11, 2236000, 'Santa Teresa Jesus "El Libro de la Vida',2012 , 3)
+INSERT INTO BOOK VALUES ( 12, 686836000, 'El Cura y los Mandarines',2015 , 5)
+INSERT INTO BOOK VALUES ( 13, 6585858555, 'Derecho civil Internacional "Volumen II"',2010 , 6)
+INSERT INTO BOOK VALUES ( 14, 122122120, 'Jugar con la Comida',2009 , 7)
+INSERT INTO BOOK VALUES ( 15, 845755750, 'Guia de la Astronomia',2001 , 5)
+INSERT INTO BOOK VALUES ( 16, 987888885, 'Seguridad Informatica',2002 , 8)
+INSERT INTO BOOK VALUES ( 17, 25456566566, 'Informatica Basica',2005 , 4)
+INSERT INTO BOOK VALUES ( 18, 4654565788, 'Hackers "Edicion 2012"',2012 , 3)
+INSERT INTO BOOK VALUES ( 19, 8963345545, 'Desnudando a Google',2004 , 5)
+INSERT INTO BOOK VALUES ( 20, 74422368, 'Coches de Diseño',1995 , 6)
+INSERT INTO BOOK VALUES ( 21, 896554244, 'La Enciclopedia de los Coches de Epoca',1965 , 7)
+INSERT INTO BOOK VALUES ( 22, 63636354544, 'Marco Normativo del Derecho Informatico',1999 , 8)
+INSERT INTO BOOK VALUES ( 23, 545687788, 'Curso de Derecho Penal',1995 , 9)
+INSERT INTO BOOK VALUES ( 24, 7898996655, 'La Ladrona de Libros',2007 , 2)
+INSERT INTO BOOK VALUES ( 25, 3232233655, 'Temor de un Hombre Sabio',2009 , 6)
+INSERT INTO BOOK VALUES ( 26, 458965212, 'El Color de los Sueños',2012 , 9)
+INSERT INTO BOOK VALUES ( 27, 58965412, 'Los Juegos del Hambre',2013 , 3)
+INSERT INTO BOOK VALUES ( 28, 134679852, 'Los Juegos de Tronos',2002 , 4)
+INSERT INTO BOOK VALUES ( 29, 289134658, 'Posicionamientos en Buscadores',2007 , 7)
+INSERT INTO BOOK VALUES ( 30, 561347952, 'El Nombre del Viento',2009 , 8)
+
+/*Relación autores-libros ( AUTHORS_ID, ESCRITOS_ID )*/
+INSERT INTO AUTHOR_BOOK VALUES (1 ,1 )
+INSERT INTO AUTHOR_BOOK VALUES (2 ,1 )
+INSERT INTO AUTHOR_BOOK VALUES (3 ,2 )
+INSERT INTO AUTHOR_BOOK VALUES (4 ,2 )
+
+/*Usuarios ( ID, HASHEDANDSALTED, LOGIN, ROLE, SALT )*/
+insert into User values (0, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'admin', 'admin', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (1, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'user', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (2, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'test', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (3, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'lara', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (4, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'lidia', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (5, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'lorena', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (6, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'juan', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (7, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'jose', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+insert into User values (8, '95ff31602486cecd7db623d4598a84b7aac60a5f', 'marcos', 'user', '37d602c186c2b7ea82750f0055b5ede5');
+
+/*Librería personal ( ID, COMENTARIO, ESTADO, BOOKS_ID, OWNERS_ID )*/
+INSERT INTO BOOKUSER  VALUES ( 1, 'Es muy bueno', 'usado',1 ,1 )
+INSERT INTO BOOKUSER  VALUES ( 2, 'Necesario para aprobar EDA', 'nuevo',2 ,2 )
+INSERT INTO BOOKUSER  VALUES ( 3, 'No tiene portada', 'viejo',3 ,3 )
+INSERT INTO BOOKUSER  VALUES ( 4, 'Las letras son pequeñas', 'viejo',4 ,4 )
+INSERT INTO BOOKUSER  VALUES ( 5, 'De color amarillo', 'nuevo',5 ,5 )
+INSERT INTO BOOKUSER  VALUES ( 6, 'No lo explica bien', 'usado',6 ,6 )
+INSERT INTO BOOKUSER  VALUES ( 7, 'El autor ha fallecido', 'nuevo',7 ,7 )
+INSERT INTO BOOKUSER  VALUES ( 8, 'Muchas paginas', 'nuevo',8 ,8 )
+
+/*Relación género-libro ( TYPES_ID, GENEROS_ID )*/
+INSERT INTO GENRE_BOOK VALUES (25, 1)
+INSERT INTO GENRE_BOOK VALUES (29, 1)
+INSERT INTO GENRE_BOOK VALUES (22, 2)
+INSERT INTO GENRE_BOOK VALUES (22 ,3)
+INSERT INTO GENRE_BOOK VALUES (22 ,4)
+INSERT INTO GENRE_BOOK VALUES (22 ,5)
+INSERT INTO GENRE_BOOK VALUES (22 ,6)
+INSERT INTO GENRE_BOOK VALUES (22 ,7)
+INSERT INTO GENRE_BOOK VALUES (22 ,8)
+INSERT INTO GENRE_BOOK VALUES (10 ,9)
+
+/*Persona ( ID, MAIL, NAME, SURNAME1, SURNAME2, USER_ID )*/
+INSERT INTO PERSON VALUES (1, 'miggar08@ucm.es', 'Miguel', 'García', 'Solano', 0)
+INSERT INTO PERSON VALUES (2, 'caralo01@ucm.es', 'Carlos', 'Alonso', 'Rodríguez', 1)
+INSERT INTO PERSON VALUES (3, 'mipere01@ucm.es', 'Miguel', 'Pérez', 'Polo', 2)
+INSERT INTO PERSON VALUES (4, 'lara@ucm.es', 'Lara', 'Pérez', 'Rodriguez', 3)
+INSERT INTO PERSON VALUES (5, 'lidia@ucm.es', 'Lidia', 'Pérez', 'Rodriguez', 4)
+INSERT INTO PERSON VALUES (6, 'lorena@ucm.es', 'Lorena', 'Garcia', 'Sola', 5)
+INSERT INTO PERSON VALUES (7, 'pepe@ucm.es', 'Jose', 'Alonso', 'Mendiola', 6)
+INSERT INTO PERSON VALUES (8, 'juan@ucm.es', 'Juan', 'Saez', 'Pelaez', 7)
+INSERT INTO PERSON VALUES (9, 'marcos@ucm.es', 'Marcos', 'Brito', 'Gonzalez', 8)
+
+/*Intercambios ( ID, ESTADO, BOOK_USER_ID, USERIN_ID, USEROUT_ID )*/
+INSERT INTO REQUEST VALUES (1, 'pendiente',1 ,1 ,2 )
+INSERT INTO REQUEST VALUES (2, 'cancelado',2 ,2 ,1 )
+INSERT INTO REQUEST VALUES (3, 'aceptado',1 ,1 ,0 )

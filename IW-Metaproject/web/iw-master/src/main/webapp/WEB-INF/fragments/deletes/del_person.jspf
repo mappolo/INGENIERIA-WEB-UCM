@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	$(function() {
+		$(".pe").click(function() {
+			var id = $(this).attr("id").substring("del_".length);
+			console.log("deleting", id);
+			delPerson(id);
+		});
+	})
+
+	function delPerson(id) {
+		$.post("delPerson", {
+			id : id,
+			csrf : "${e:forJavaScript(csrf_token)}"
+		}, function(dataPerson) {
+			//$("#del_" + id).parent().parent().remove();
+			$("#dataPerson"+" #del_" + id).parent().parent().remove();
+		});
+	}
+</script>

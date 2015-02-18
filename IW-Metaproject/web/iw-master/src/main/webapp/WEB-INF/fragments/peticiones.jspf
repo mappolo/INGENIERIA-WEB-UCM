@@ -1,0 +1,32 @@
+<script type="text/javascript">
+ 	$(function() {
+		$(".accept").click(function() {
+			var id = $(this).attr("id").substring("acp_".length);
+			console.log("accepting", id);
+			 acceptRequest(id);
+		});
+	})
+ 	$(function() {
+		$(".cancel").click(function() {
+			var id = $(this).attr("id").substring("can_".length);
+			console.log("canceling", id);
+			cancelRequest(id)
+		});
+	})
+	function acceptRequest(id) {
+		$.post("acceptRequest", {
+			id : id,
+			csrf : "${e:forJavaScript(csrf_token)}"
+		} , function(req){
+			$("#acp_" + id).parent().parent().remove();
+		} );
+ 	}
+	function cancelRequest(id) {
+			$.post("cancelRequest", {
+				id : id,
+				csrf : "${e:forJavaScript(csrf_token)}"
+			} , function(req){
+				$("#can_" + id).parent().parent().remove();
+		} );
+	}
+</script>

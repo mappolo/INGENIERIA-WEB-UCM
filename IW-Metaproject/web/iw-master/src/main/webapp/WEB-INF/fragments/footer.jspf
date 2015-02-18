@@ -1,0 +1,11 @@
+<!-- start footer -->         
+<div id="footer">
+<!-- <div id="footer-pad">&nbsp;</div> -->
+	<!--  start footer-left -->
+	<div id="footer-left">
+	Sitio desarrollado por Grupo IW |usando Html5, Javascript, Css3 y Java <a href="">www.bookchange.com </a>@ 2015. Todos los derechos reservados.</div>
+	<!--  end footer-left -->
+
+</div>
+<!-- end footer -->
+</body>

@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	$(function() {
+		$(".bu").click(function() {
+			var id = $(this).attr("id").substring("del_".length);
+			console.log("deleting", id);
+			delBookUser(id);
+		});
+	})
+
+	function delBookUser(id) {
+		$.post("delBookUser", {
+			id : id,
+			csrf : "${e:forJavaScript(csrf_token)}"
+		}, function(datadBookUser) {
+			//$("#del_" + id).parent().parent().remove();
+			$("#datadBookUser"+" #del_" + id).parent().parent().remove();
+		});
+	}
+</script>

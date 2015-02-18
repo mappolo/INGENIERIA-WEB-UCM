@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	$(function() {
+		$(".ge").click(function() {
+			var id = $(this).attr("id").substring("del_".length);
+			console.log("deleting", id);
+			delGenre(id);
+		});
+	})
+
+	function delGenre(id) {
+		$.post("delGenre", {
+			id : id,
+			csrf : "${e:forJavaScript(csrf_token)}"
+		}, function(dataGenre) {
+			//$("#del_" + id).parent().parent().remove();
+			$("#dataGenre"+" #del_" + id).parent().parent().remove();
+		});
+	}
+</script>

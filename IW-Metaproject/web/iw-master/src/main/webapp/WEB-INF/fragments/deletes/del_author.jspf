@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	$(function() {
+		$(".au").click(function() {
+			var id = $(this).attr("id").substring("del_".length);
+			console.log("deleting", id);
+			delAuthor(id);
+		});
+	})
+
+	function delAuthor(id) {
+		$.post("delAuthor", {
+			id : id,
+			csrf : "${e:forJavaScript(csrf_token)}"
+		}, function(dataAuthor) {
+			//$("#del_" + id).parent().parent().remove();
+			$("#dataAuthor"+" #del_" + id).parent().parent().remove();
+		});
+	}
+</script>
